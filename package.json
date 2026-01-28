@@ -1,0 +1,25 @@
+{
+  "name": "nisamerica-petproject",
+  "version": "1.0.0",
+  "description": "Job search and application smoke test automation",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jojotrue/nisamerica-petproject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jojotrue/nisamerica-petproject/issues"
+  },
+  "homepage": "https://github.com/jojotrue/nisamerica-petproject#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.0",
+    "@types/node": "^25.0.10"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.2.0"
+  }
+}
