@@ -7,7 +7,7 @@ class ApplyForm {
         this.subjectField = page.getByRole('textbox', { name: 'Subject' });
         this.messageField = page.getByRole('textbox', { name: 'Message' });
         this.fileUpload = page.locator('input[type="file"]');
-        this.emailError = page.getByText(/ivalid-email/i);
+        this.emailError = page.getByText(/invalid-email/i);
         this.submitButton = page.getByRole('button', { name: 'Submit' });
     }
 
