@@ -12,6 +12,7 @@ const test = base.extend({
 
     //navigate using user flow:
     await home.goto('/');
+    await page.waitForLoadState('networkidle');
     await home.clickLoginAvatar();
 
     //navigate to registration page
