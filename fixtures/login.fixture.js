@@ -9,7 +9,8 @@ const test = base.extend({
     const login = new LoginPage(page);
 
     //navigate using user flow:
-    await home.goto('/account');
+    await home.goto('/');
+    await page.waitForLoadState('networkidle');
     await home.clickLoginAvatar();
 
     await expect(page).toHaveURL(/login/i);
