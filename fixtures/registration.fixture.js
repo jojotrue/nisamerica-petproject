@@ -11,10 +11,10 @@ const test = base.extend({
     const register = new RegistrationPage(page);
 
     //navigate using user flow:
-    await home.goto(`${process.env.BASE_URL}/account`);
+    await home.goto('/');
     await home.clickLoginAvatar();
 
-    //login, do not wait for URL
+    //navigate to registration page
     //wait for UI indication that create account link is visble
     await expect(login.createAccountLink).toBeVisible();
 

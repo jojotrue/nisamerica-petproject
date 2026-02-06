@@ -9,7 +9,7 @@ const test = base.extend({
     const login = new LoginPage(page);
 
     //navigate using user flow:
-    await home.goto(`${process.env.BASE_URL}/account`);
+    await home.goto('/account');
     await home.clickLoginAvatar();
 
     await expect(page).toHaveURL(/login/i);

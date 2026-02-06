@@ -15,7 +15,7 @@ class RegistrationPage {
     }
 
 async openLoginPage() {
-    await this.page.goto(`${process.env.STORE_BASE_URL}/account/login`);
+    await this.page.goto('/account/login');
 
 }
 

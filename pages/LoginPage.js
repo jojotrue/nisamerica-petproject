@@ -7,10 +7,17 @@ class LoginPage {
     this.password = page.getByRole("textbox", { name: "Password" });
     this.loginAvatar = page.getByRole("link", { name: "Login" });
     this.loginButton = page.getByRole("button", { name: "Login" });
+    this.createAccountLink = page.getByRole("link", {
+      name: "Create an account",
+    });
   }
 
   async openLoginPage() {
-    await this.page.goto(`${process.env.STORE_BASE_URL}/account/login`);
+    await this.page.goto("/account/login");
+  }
+
+  async clickCreateAccountLink() {
+    await this.createAccountLink.click();
   }
 
   async waitForLoginForm() {

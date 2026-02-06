@@ -7,7 +7,7 @@ class StoreHomePage {
   }
 
   async goto() {
-    await this.page.goto(process.env.STORE_BASE_URL);
+    await this.page.goto('/');
   }
 
   async clickLoginAvatar() {
