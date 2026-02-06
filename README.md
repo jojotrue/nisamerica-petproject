@@ -1,3 +1,4 @@
+
 # NIS America Store – UI Test Automation
 
 This repository contains Playwright-based UI automation for key user-facing flows in the NIS America Store.
@@ -63,3 +64,4 @@ This project demonstrates:
 - maintainable test architecture
 
 It reflects how modern QA teams balance coverage, stability, and long-term maintainability.
+
