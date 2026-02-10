@@ -11,10 +11,9 @@ const test = base.extend({
     const register = new RegistrationPage(page);
 
     //navigate using user flow:
-    await home.goto('/');
+    await page.goto('https://store.nisamerica.com/');
     await home.clickLoginAvatar();
 
-    //navigate to registration page
     //wait for UI indication that create account link is visble
     await expect(login.createAccountLink).toBeVisible();
 
