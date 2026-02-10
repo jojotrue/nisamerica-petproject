@@ -7,11 +7,13 @@ class StoreHomePage {
   }
 
   async goto() {
-    await this.page.goto('/');
+    await this.page.goto('https://store.nisamerica.com/');
   }
 
   async clickLoginAvatar() {
-    await this.loginAvatar.click();
+  await this.loginAvatar.waitFor({ state: 'visible' });
+  await this.loginAvatar.click();
+}
   }
 }
 
