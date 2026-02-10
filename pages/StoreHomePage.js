@@ -15,6 +15,6 @@ class StoreHomePage {
   await this.loginAvatar.click();
 }
   }
-}
+
 
 module.exports = StoreHomePage;
