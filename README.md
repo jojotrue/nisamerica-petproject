@@ -1,6 +1,47 @@
-# NIS America Store – UI Test Automation
-This repository contains Playwright-based UI automation for key user-facing flows in the NIS America Store.
-The focus is on **realistic automation**, clean structure, and decisions that reflect how testing works in production environments — including when *not* to automate certain things.
+NIS America Store – UI Test Automation
+This repository contains Playwright-based UI automation for key user-facing flows in the NIS America Store. The focus is on realistic automation, clean structure, and decisions that reflect how testing works in production environments.
+
+🚀 Getting Started
+
+Prerequisites
+
+Node.js (v18 or higher) 
+npm (comes with Node.js)
+Git 
+
+Installation
+
+Clone the repository:
+
+git clone https://github.com/jojotrue/nisamerica-petproject.git
+   cd nisamerica-petproject
+
+Install dependencies:
+
+bash   npm install
+
+Install Playwright browsers:
+
+bash   npx playwright install
+
+Running Tests
+Run all tests:
+bash npx playwright test
+
+Run only careers tests
+bash npx playwright test --project=careers-site
+
+Run only store/auth tests
+bash npx playwright test --project=store-site
+
+Run tests in headed mode:
+bash npx playwright test --headed
+
+Run tests in UI mode (interactive):
+bash npx playwright test --ui
+
+View Test Reports
+After running tests, view the HTML report: npx playwright show-report
 
 ---
 
@@ -82,8 +123,6 @@ The codebase was intentionally refactored to:
 - Avoid cross-feature coupling
 - Keep tests easy to read and extend
 
-The emphasis is on **clarity and intent**, not just test volume.
-
 ---
 
 ## Purpose of This Repo
@@ -91,6 +130,4 @@ This project demonstrates:
 - Practical UI automation under real-world constraints
 - Thoughtful scoping decisions
 - Maintainable test architecture
-
-It reflects how modern QA teams balance coverage, stability, and long-term maintainability.
 
